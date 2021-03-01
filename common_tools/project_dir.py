@@ -12,5 +12,8 @@ report_dir = os.path.join(Base_dir,"output/report")
 # 截图路径
 screenshot_dir = os.path.join(Base_dir,"output/screenshot")
 
+# 用例路径
+test_case = os.path.join(Base_dir,"test")
+
 if __name__ == '__main__':
     print(Base_dir,log_dir,report_dir,screenshot_dir)
