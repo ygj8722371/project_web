@@ -1,1 +1,21 @@
 2021-03-01 14:03:53,147 -25- D:\project_web\output/log\截图成功-20-INFO
+2021-03-01 16:23:43,812 -68- 元素id查找成功-20-INFO
+2021-03-01 16:23:43,812 -72- 元素id查找失败-40-ERROR
+Traceback (most recent call last):
+  File "D:\project_web\common_tools\base_page.py", line 69, in g_elemet
+    logger().info()
+TypeError: info() missing 1 required positional argument: 'msg'
+2021-03-01 16:23:43,813 -44- 元素('id', 'user_name')传值['', '123456', '请输入会员登录名称！']失败-40-ERROR
+Traceback (most recent call last):
+  File "D:\project_web\common_tools\base_page.py", line 69, in g_elemet
+    logger().info()
+TypeError: info() missing 1 required positional argument: 'msg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\project_web\common_tools\base_page.py", line 39, in element_send_key
+    self.g_elemet(*loc).send_keys(key)
+  File "D:\project_web\common_tools\base_page.py", line 73, in g_elemet
+    self.driver.s_screenshot(doc)
+AttributeError: 'WebDriver' object has no attribute 's_screenshot'

@@ -4,8 +4,10 @@ from page_locator.login_locator import Login_page as LP
 class Loginpage(BasePage):
 
     def login(self,username,password):
+        self.wait_elemet_presences(LP.username)
         self.element_send_key(LP.username,username)
-        self.element_send_key(LP.username,password)
+        self.wait_elemet_presences(LP.password)
+        self.element_send_key(LP.password,password)
         self.element_click(LP.login_button)
 
     def get_username_empty_message(self):

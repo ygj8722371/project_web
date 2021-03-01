@@ -12,9 +12,10 @@ class Test_login_page(unittest.TestCase):
         driver = webdriver.Chrome()
         driver.get(test_environment)
         self.lg = LG(driver)
+        self.lg.g_url("http://132.232.64.151:84/dbshop/user/login")
 
     def tearDown(self):
-        pass
+        self.driver.quit()
 
     def test_login_success(self):
         self.lg.login(login_success[0],login_success[1])
