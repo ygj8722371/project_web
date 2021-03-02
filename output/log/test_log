@@ -1,54 +1,54 @@
-2021-03-01 14:03:53,147 -25- D:\project_web\output/log\截图成功-20-INFO
-2021-03-01 16:23:43,812 -68- 元素id查找成功-20-INFO
-2021-03-01 16:23:43,812 -72- 元素id查找失败-40-ERROR
+2021-03-02 16:59:43,316 -56- 网址http://132.232.64.151:84/dbshop/user/login打开成功-20-INFO
+2021-03-02 16:59:43,344 -18- 元素('id', 'user_name')存在-20-INFO
+2021-03-02 16:59:43,344 -63- 元素('id', 'user_name')查找成功-20-INFO
+2021-03-02 16:59:43,532 -39- 元素('id', 'user_name')传值yyy001成功-20-INFO
+2021-03-02 16:59:43,552 -18- 元素('id', 'user_password')存在-20-INFO
+2021-03-02 16:59:43,552 -63- 元素('id', 'user_password')查找成功-20-INFO
+2021-03-02 16:59:43,648 -39- 元素('id', 'user_password')传值123456成功-20-INFO
+2021-03-02 16:59:43,648 -63- 元素('xpath', '//button[@class="btn btn-primary"]')查找成功-20-INFO
+2021-03-02 16:59:44,058 -31- 查找元素('xpath', '//button[@class="btn btn-primary"]')成功-20-INFO
+2021-03-02 16:59:44,079 -18- 元素('xpath', '//UL[@class="list-inline"]/li/a')存在-20-INFO
+2021-03-02 16:59:44,079 -47- 元素('xpath', '//UL[@class="list-inline"]/li/a')文本打印成功-20-INFO
+2021-03-02 16:59:44,079 -63- 元素('xpath', '//UL[@class="list-inline"]/li/a')查找成功-20-INFO
+2021-03-02 16:59:44,106 -50- 元素('xpath', '//UL[@class="list-inline"]/li/a')文本打印失败-40-ERROR
 Traceback (most recent call last):
-  File "D:\project_web\common_tools\base_page.py", line 69, in g_elemet
-    logger().info()
-TypeError: info() missing 1 required positional argument: 'msg'
-2021-03-01 16:23:43,813 -44- 元素('id', 'user_name')传值['', '123456', '请输入会员登录名称！']失败-40-ERROR
-Traceback (most recent call last):
-  File "D:\project_web\common_tools\base_page.py", line 69, in g_elemet
-    logger().info()
-TypeError: info() missing 1 required positional argument: 'msg'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "D:\project_web\common_tools\base_page.py", line 39, in element_send_key
-    self.g_elemet(*loc).send_keys(key)
-  File "D:\project_web\common_tools\base_page.py", line 73, in g_elemet
-    self.driver.s_screenshot(doc)
-AttributeError: 'WebDriver' object has no attribute 's_screenshot'
-2021-03-01 16:38:52,951 -60- 网址http://132.232.64.151:84/dbshop/user/login打开成功-20-INFO
-2021-03-01 16:38:52,951 -63- 网址http://132.232.64.151:84/dbshop/user/login打开失败-40-ERROR
-Traceback (most recent call last):
-  File "D:\project_web\common_tools\base_page.py", line 61, in g_url
-    logger().info()
-TypeError: info() missing 1 required positional argument: 'msg'
-2021-03-01 16:39:18,729 -60- 网址http://132.232.64.151:84/dbshop/user/login打开成功-20-INFO
-2021-03-01 16:39:18,729 -63- 网址http://132.232.64.151:84/dbshop/user/login打开失败-40-ERROR
-Traceback (most recent call last):
-  File "D:\project_web\common_tools\base_page.py", line 61, in g_url
-    logger().info()
-TypeError: info() missing 1 required positional argument: 'msg'
-2021-03-01 16:39:42,165 -60- 网址http://132.232.64.151:84/dbshop/user/login打开成功-20-INFO
-2021-03-01 16:39:42,165 -63- 网址http://132.232.64.151:84/dbshop/user/login打开失败-40-ERROR
-Traceback (most recent call last):
-  File "D:\project_web\common_tools\base_page.py", line 61, in g_url
-    logger().info()
-TypeError: info() missing 1 required positional argument: 'msg'
-2021-03-01 16:39:54,735 -63- 网址http://132.232.64.151:84/dbshop/user/login打开失败-40-ERROR
-Traceback (most recent call last):
-  File "D:\project_web\common_tools\base_page.py", line 59, in g_url
-    self.driver.get(url)
-  File "C:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 333, in get
-    self.execute(Command.GET, {'url': url})
-  File "C:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
-    self.error_handler.check_response(response)
-  File "C:\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=85.0.4183.121)
-  (Driver info: chromedriver=70.0.3538.97 (d035916fe243477005bc95fe2a5778b8f20b6ae1),platform=Windows NT 6.1.7601 SP1 x86_64)
-
+  File "D:\project_web\common_tools\base_page.py", line 48, in get_element_text
+    return self.f_elemet(loc).text()
+TypeError: 'str' object is not callable
+2021-03-02 16:59:44,107 -24- 截图成功-20-INFO
+2021-03-02 17:05:45,521 -56- 网址http://132.232.64.151:84/dbshop/user/login打开成功-20-INFO
+2021-03-02 17:05:45,544 -18- 元素('id', 'user_name')存在-20-INFO
+2021-03-02 17:05:45,544 -63- 元素('id', 'user_name')查找成功-20-INFO
+2021-03-02 17:05:45,720 -39- 元素('id', 'user_name')传值yyy001成功-20-INFO
+2021-03-02 17:05:45,738 -18- 元素('id', 'user_password')存在-20-INFO
+2021-03-02 17:05:45,739 -63- 元素('id', 'user_password')查找成功-20-INFO
+2021-03-02 17:05:45,853 -39- 元素('id', 'user_password')传值123456成功-20-INFO
+2021-03-02 17:05:45,853 -63- 元素('xpath', '//button[@class="btn btn-primary"]')查找成功-20-INFO
+2021-03-02 17:05:46,275 -31- 查找元素('xpath', '//button[@class="btn btn-primary"]')成功-20-INFO
+2021-03-02 17:05:46,292 -18- 元素('xpath', '//UL[@class="list-inline"]/li/a')存在-20-INFO
+2021-03-02 17:05:46,293 -47- 元素('xpath', '//UL[@class="list-inline"]/li/a')文本打印成功-20-INFO
+2021-03-02 17:05:46,293 -63- 元素('xpath', '//UL[@class="list-inline"]/li/a')查找成功-20-INFO
+2021-03-02 17:06:34,773 -56- 网址http://132.232.64.151:84/dbshop/user/login打开成功-20-INFO
+2021-03-02 17:06:34,834 -18- 元素('id', 'user_name')存在-20-INFO
+2021-03-02 17:06:34,834 -63- 元素('id', 'user_name')查找成功-20-INFO
+2021-03-02 17:06:34,932 -39- 元素('id', 'user_name')传值成功-20-INFO
+2021-03-02 17:06:34,967 -18- 元素('id', 'user_password')存在-20-INFO
+2021-03-02 17:06:34,967 -63- 元素('id', 'user_password')查找成功-20-INFO
+2021-03-02 17:06:35,087 -39- 元素('id', 'user_password')传值123456成功-20-INFO
+2021-03-02 17:06:35,087 -63- 元素('xpath', '//button[@class="btn btn-primary"]')查找成功-20-INFO
+2021-03-02 17:06:35,174 -31- 查找元素('xpath', '//button[@class="btn btn-primary"]')成功-20-INFO
+2021-03-02 17:06:35,189 -18- 元素('xpath', '//label[@for="user_name"]')存在-20-INFO
+2021-03-02 17:06:35,190 -47- 元素('xpath', '//label[@for="user_name"]')文本打印成功-20-INFO
+2021-03-02 17:06:35,190 -63- 元素('xpath', '//label[@for="user_name"]')查找成功-20-INFO
+2021-03-02 17:07:11,795 -56- 网址http://132.232.64.151:84/dbshop/user/login打开成功-20-INFO
+2021-03-02 17:07:11,828 -18- 元素('id', 'user_name')存在-20-INFO
+2021-03-02 17:07:11,828 -63- 元素('id', 'user_name')查找成功-20-INFO
+2021-03-02 17:07:12,016 -39- 元素('id', 'user_name')传值yyy001成功-20-INFO
+2021-03-02 17:07:12,039 -18- 元素('id', 'user_password')存在-20-INFO
+2021-03-02 17:07:12,039 -63- 元素('id', 'user_password')查找成功-20-INFO
+2021-03-02 17:07:12,097 -39- 元素('id', 'user_password')传值成功-20-INFO
+2021-03-02 17:07:12,098 -63- 元素('xpath', '//button[@class="btn btn-primary"]')查找成功-20-INFO
+2021-03-02 17:07:12,195 -31- 查找元素('xpath', '//button[@class="btn btn-primary"]')成功-20-INFO
+2021-03-02 17:07:12,210 -18- 元素('xpath', '//label[@for="user_password"]')存在-20-INFO
+2021-03-02 17:07:12,211 -47- 元素('xpath', '//label[@for="user_password"]')文本打印成功-20-INFO
+2021-03-02 17:07:12,211 -63- 元素('xpath', '//label[@for="user_password"]')查找成功-20-INFO

@@ -25,3 +25,13 @@ class Loginpage(BasePage):
     def get_username_password_dismatch(self):
         self.wait_elemet_presences(LP.username_password_dismatch)
         return self.get_element_text(LP.username_password_dismatch)
+
+if __name__ == '__main__':
+    from selenium import webdriver
+    import time
+    driver = webdriver.Chrome()
+    driver.get("http://132.232.64.151:84/dbshop/user/login")
+    time.sleep(2)
+    Loginpage(driver).login("yyy001","123456")
+    time.sleep(2)
+    driver.quit()
