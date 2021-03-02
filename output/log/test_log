@@ -19,3 +19,36 @@ Traceback (most recent call last):
   File "D:\project_web\common_tools\base_page.py", line 73, in g_elemet
     self.driver.s_screenshot(doc)
 AttributeError: 'WebDriver' object has no attribute 's_screenshot'
+2021-03-01 16:38:52,951 -60- 网址http://132.232.64.151:84/dbshop/user/login打开成功-20-INFO
+2021-03-01 16:38:52,951 -63- 网址http://132.232.64.151:84/dbshop/user/login打开失败-40-ERROR
+Traceback (most recent call last):
+  File "D:\project_web\common_tools\base_page.py", line 61, in g_url
+    logger().info()
+TypeError: info() missing 1 required positional argument: 'msg'
+2021-03-01 16:39:18,729 -60- 网址http://132.232.64.151:84/dbshop/user/login打开成功-20-INFO
+2021-03-01 16:39:18,729 -63- 网址http://132.232.64.151:84/dbshop/user/login打开失败-40-ERROR
+Traceback (most recent call last):
+  File "D:\project_web\common_tools\base_page.py", line 61, in g_url
+    logger().info()
+TypeError: info() missing 1 required positional argument: 'msg'
+2021-03-01 16:39:42,165 -60- 网址http://132.232.64.151:84/dbshop/user/login打开成功-20-INFO
+2021-03-01 16:39:42,165 -63- 网址http://132.232.64.151:84/dbshop/user/login打开失败-40-ERROR
+Traceback (most recent call last):
+  File "D:\project_web\common_tools\base_page.py", line 61, in g_url
+    logger().info()
+TypeError: info() missing 1 required positional argument: 'msg'
+2021-03-01 16:39:54,735 -63- 网址http://132.232.64.151:84/dbshop/user/login打开失败-40-ERROR
+Traceback (most recent call last):
+  File "D:\project_web\common_tools\base_page.py", line 59, in g_url
+    self.driver.get(url)
+  File "C:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "C:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=85.0.4183.121)
+  (Driver info: chromedriver=70.0.3538.97 (d035916fe243477005bc95fe2a5778b8f20b6ae1),platform=Windows NT 6.1.7601 SP1 x86_64)
+
